@@ -1,0 +1,21 @@
+mysql:
+  username: root
+  password: 123456
+  host: localhost
+  port: 3306
+  dbname: yinger
+  maxIdleConns: 5
+  maxOpenConns: 10
+http:
+  port: 8083
+kafka:
+  host: localhost
+  port: 9092
+mongo:
+  username: root
+  password: 123456
+  host: localhost
+  port: 27017
+thrift:
+  host: localhost
+  port: 6666
