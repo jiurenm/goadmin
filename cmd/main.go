@@ -11,7 +11,7 @@ import (
 func register() {
 	serverConfigs := []constant.ServerConfig{
 		{
-			IpAddr:      "172.21.160.1",
+			IpAddr:      "localhost",
 			ContextPath: "/nacos",
 			Port:        8848,
 		},
@@ -20,7 +20,7 @@ func register() {
 		"serverConfigs": serverConfigs,
 	})
 	success, _ := namingClient.RegisterInstance(vo.RegisterInstanceParam{
-		Ip:          "172.21.160.1",
+		Ip:          "localhost",
 		Port:        8083,
 		ServiceName: "tool",
 		Weight:      1,
